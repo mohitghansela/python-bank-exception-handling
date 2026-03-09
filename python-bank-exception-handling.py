@@ -16,9 +16,8 @@ Topics Covered:
 import logging
 import datetime
 
-# ─────────────────────────────────────────────
-# 📋 LOGGING SETUP
-# ─────────────────────────────────────────────
+# LOGGING SETUP
+
 logging.basicConfig(
     filename="bank_errors.log",
     level=logging.ERROR,
@@ -26,9 +25,9 @@ logging.basicConfig(
 )
 
 
-# ─────────────────────────────────────────────
-# 🔴 CUSTOM EXCEPTIONS (User-Defined)
-# ─────────────────────────────────────────────
+
+#  CUSTOM EXCEPTIONS (User-Defined)
+
 
 class BankException(Exception):
     """Base class for all Bank related exceptions"""
@@ -71,9 +70,8 @@ class AccountLockedError(BankException):
         )
 
 
-# ─────────────────────────────────────────────
-# 🏦 BANK ACCOUNT CLASS
-# ─────────────────────────────────────────────
+# BANK ACCOUNT CLASS
+
 
 class BankAccount:
     def __init__(self, acc_no, holder_name, balance, pin):
@@ -168,9 +166,9 @@ class BankAccount:
         print(f"{'='*55}\n")
 
 
-# ─────────────────────────────────────────────
-# 🏦 BANK CLASS (manages multiple accounts)
-# ─────────────────────────────────────────────
+
+# BANK CLASS (manages multiple accounts)
+
 
 class Bank:
     def __init__(self, name):
@@ -235,9 +233,9 @@ class Bank:
             print("  📋 Transfer process completed (finally block executed)")
 
 
-# ─────────────────────────────────────────────
-# 🚀 MAIN DEMO - EXCEPTION HANDLING IN ACTION
-# ─────────────────────────────────────────────
+
+# MAIN DEMO - EXCEPTION HANDLING IN ACTION
+
 
 def divider(title=""):
     print(f"\n{'─'*55}")
@@ -377,4 +375,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
