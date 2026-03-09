@@ -32,11 +32,6 @@ Logging module	Writing errors to a log file
 This project was built to demonstrate practical exception handling in Python using a realistic banking example.
 
 It can be useful for:
-
 Python learners
-
 Students studying error handling
-
-Developers practicing OOP + exception management
-
 Teachers demonstrating exception handling concepts
